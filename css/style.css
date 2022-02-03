@@ -1,0 +1,837 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+body{
+  font-size: 16px;
+  font-family: "Ubuntu";
+  overflow-x: hidden;
+}
+
+
+
+/********************************************/
+/* ************ HEADING-SECTION ************** */
+/********************************************/
+
+.header-section {
+  width: 100%;
+  height: 73vw;
+  background: url(../img/bg-1.png) no-repeat;
+  background-size: contain;
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/**
+* Desktop Navigation 
+*/
+
+
+.logo-brand {
+  font-size: 32px;
+  font-family: "Ubuntu";
+  text-transform: uppercase;
+  font-weight: 900;
+  margin: 6px 0px 0px 15px;
+  position: relative;
+}
+.navbar {
+  padding: 0;
+}
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+.navbar li {
+  position: relative;
+}
+.navbar a, .navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 30px;
+  font-family: "Ubuntu";
+  font-size: 25px;
+  font-weight: 500;
+  color: #ffffff;
+  white-space: nowrap;
+  transition: 0.3s;
+  text-decoration: none;
+}
+.navbar a i, .navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+  color: #5fcf80;
+}
+.navbar .dropdown ul {
+  display: block;
+  position: absolute;
+  left: 30px;
+  top: calc(100% + 30px);
+  margin: 0;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: 0.3s;
+  border-radius: 4px;
+}
+.navbar .dropdown ul li {
+  min-width: 200px;
+}
+.navbar .dropdown ul a {
+  padding: 10px 20px;
+  font-size: 14px;
+  text-transform: none;
+  font-weight: 500;
+}
+.navbar .dropdown ul a i {
+  font-size: 12px;
+}
+.navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
+  color: #5fcf80;
+}
+.navbar .dropdown:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+.navbar .dropdown .dropdown ul {
+  top: 0;
+  left: calc(100% - 30px);
+  visibility: hidden;
+}
+.navbar .dropdown .dropdown:hover > ul {
+  opacity: 1;
+  top: 0;
+  left: 100%;
+  visibility: visible;
+}
+@media (max-width: 1366px) {
+  .navbar .dropdown .dropdown ul {
+    left: -90%;
+  }
+  .navbar .dropdown .dropdown:hover > ul {
+    left: -100%;
+  }
+}
+
+
+
+/**
+* Mobile Navigation 
+*/
+.mobile-nav-toggle {
+  color: #37423b;
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+  line-height: 0;
+  transition: 0.5s;
+}
+.mobile-nav-toggle.bi-x {
+  color: #fff;
+}
+
+@media (max-width: 992px) {
+  .mobile-nav-toggle {
+    display: block;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+}
+.navbar-mobile {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(32, 38, 34, 0.9);
+  transition: 0.3s;
+  z-index: 999;
+}
+.navbar-mobile .mobile-nav-toggle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.navbar-mobile ul {
+  display: block;
+  position: absolute;
+  top: 55px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  padding: 10px 0;
+  border-radius: 6px;
+  background-color: #fff;
+  overflow-y: auto;
+  transition: 0.3s;
+}
+.navbar-mobile a, .navbar-mobile a:focus {
+  padding: 10px 20px;
+  font-size: 15px;
+  color: #37423b;
+}
+.navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
+  color: #5fcf80;
+}
+.navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
+  margin: 15px;
+}
+.navbar-mobile .dropdown ul {
+  position: static;
+  display: none;
+  margin: 10px 20px;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 1;
+  visibility: visible;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+}
+.navbar-mobile .dropdown ul li {
+  min-width: 200px;
+}
+.navbar-mobile .dropdown ul a {
+  padding: 10px 20px;
+}
+.navbar-mobile .dropdown ul a i {
+  font-size: 12px;
+}
+.navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
+  color: #5fcf80;
+}
+.navbar-mobile .dropdown > .dropdown-active {
+  display: block;
+}
+
+
+
+
+.rest-heading{
+    font-size: 110px;
+    line-height: 110px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Ubuntu";
+    text-align: center;
+}
+
+.rest-desc{
+    width: 100%;
+    height: 115px;
+    font-size: 36px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Lato";
+    text-align: center;
+}
+
+.grid-container {
+    display: inline-grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+    row-gap: 26px;
+    column-gap: 26px;
+    position: absolute;
+    right: 20px;
+    top: 380px;
+  }
+  
+  .grid-item {
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    background-color: #ffffff;
+  }
+  
+  
+
+
+/********************************************/
+/* ************ CARD-SECTION ************** */
+/********************************************/
+
+.card-section {
+  width: 100%;
+  height: auto;
+  margin-top: 0px;
+}
+
+.card-section img{
+  height: 24vw;
+}
+
+.grid-container-1 {
+    display: inline-grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 10px;
+    row-gap: 26px;
+    column-gap: 26px;
+    position: absolute;
+    left: 164px;
+    margin-top: 187px;
+}
+  
+  .grid-item-1 {
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    background-color: #ffffff;
+  }
+
+  .popu-menu {
+    text-align: center;
+    font-size: 48px;
+    color: #7287ae;
+    font-weight: 700;
+    font-family: "Ubuntu";
+    margin-top: -116px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+  .card-title{
+    font-size: 33px;
+    color: #504f4f;
+    font-weight: 700;
+    font-family: "Ubuntu";
+  }
+
+  .card-text{
+    font-size: 25px;
+    color: #504f4f;
+    font-weight: 400;
+    font-family: "Lato";
+  }
+
+  .card-price{
+    font-size: 28px;
+    letter-spacing: 2px;
+    line-height: 66px;
+    text-decoration: none;
+    color: #565656;
+    font-weight: 700;
+    font-family: "Ubuntu";
+  }
+
+
+ .btn-design{
+    width: 334px;
+    height: 75px;
+    border-radius: 38px;
+    background-color: #7287ae;
+    border: 1px solid #7287ae;
+    margin-top: 50px;
+    margin-bottom: 160px
+
+  }
+
+ .nood-btn{
+    font-size: 23px;
+    letter-spacing: 5px;
+    line-height: 21px;
+    color: #ffffff;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: "Ubuntu";
+}
+
+.grid-container-2 {
+    display: inline-grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 10px;
+    row-gap: 26px;
+    column-gap: 26px;
+    position: absolute;
+    right: 20px;
+    margin-top: -238px;
+  }
+  
+  .grid-item-2 {
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: #7287ae;
+  }
+
+
+/********************************************/
+/* ************ NOODLE-CUP-SECTION ************** */
+/********************************************/
+
+  .nood-cup-section{
+      width: 100%;
+      height: auto;
+      background-color: white;
+  }
+
+.nood-cup-1{
+    width: 100%;
+}
+
+.cup-discount{
+    align-self: center;
+    width: 100%;
+    background-color: #ffffff;
+    margin-left: 20px
+}
+
+.cup-discount h1{
+    font-size: 58px;
+    color: #333333;
+    font-weight: 700;
+    font-family: "Ubuntu";
+}
+
+.cup-discount p{
+    width: 100%;
+    height: 175px;
+    font-size: 29px;
+    color: #333333;
+    font-weight: 400;
+    font-family: "Lato";
+}
+
+.btn-read-design{
+    width: 334px;
+    height: 75px;
+    border-radius: 38px;
+    background-color: #7287ae;
+    border: 1px solid #7287ae;
+    margin-top: 70px;
+} 
+
+.read-nood-btn{
+    font-size: 23px;
+    letter-spacing: 5px;
+    line-height: 21px;
+    color: #ffffff;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: "Ubuntu";
+}
+
+.grid-container-3 {
+    display: inline-grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 10px;
+    row-gap: 26px;
+    column-gap: 34px;
+    position: absolute;
+    left: 260px;
+    margin-top: -66px;
+  }
+  
+  .grid-item-3 {
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: #7287ae;
+  }
+
+
+
+  .cup-discount-2 {
+    width: 100%;
+    background-color: #ffffff;
+    margin-right: 20px;
+    align-self: center;
+    text-align: end;
+  }
+
+.cup-discount-2 h1{ 
+    font-size: 58px;
+    color: #333333;
+    font-weight: 700;
+    font-family: "Ubuntu";
+}
+
+.cup-discount-2 p{ 
+    width: 100%;
+    height: 175px;
+    font-size: 29px;
+    color: #333333;
+    font-weight: 400;
+    font-family: "Lato";
+}
+
+.nood-cup-2{
+    width: 100%;
+}
+
+.grid-container-4 {
+    display: inline-grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 10px;
+    row-gap: 26px;
+    column-gap: 34px;
+    position: absolute;
+    right: 110px;
+    margin-top: -66px;
+  }
+  
+  .grid-item-4 {
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: #ffffff;
+  }
+
+
+
+/********************************************/
+/* ************ ORDER-SECTION ************** */
+/********************************************/
+
+
+  .order-section{
+      width: 100%;
+      height: auto;
+      background-color: #7287ae;
+  }
+
+  .order-heading{
+    font-size: 48px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Ubuntu";
+    text-transform: uppercase;
+    margin-top: 90px;
+  }
+
+  .order-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .numbers{
+    width: 104px;
+    height: 104px;
+    border-radius: 52px;
+    background-color: #ffffff;
+    margin-top: 90px;
+  }
+
+  .number{
+    font-size: 46px;
+    line-height: 30px;
+    color: #7287ae;
+    font-weight: 700;
+    font-family: "Ubuntu";
+    text-align: center;
+    margin-top: 35px;
+    position: absolute;
+    margin-left: 25px
+  }
+
+  .order-title{
+    font-size: 46px;
+    line-height: 30px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Ubuntu";
+    text-align: center;
+    margin-top: 80px;
+  }
+
+  .order-desc{
+    width: 100%;
+    height: 127px;
+    font-size: 19px;
+    line-height: 23px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Lato";
+    text-align: center;
+    margin-top: 50px;
+  }
+
+
+  
+/********************************************/
+/* ************ FREE-DELIVERY-SECTION ************** */
+/********************************************/
+
+
+.delivery-section {
+    width: 100%;
+    height: 48vw;
+    background-image: url(../img/img6.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+  .grid-container-5{
+    display: inline-grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 10px;
+    row-gap: 26px;
+    column-gap: 34px;
+    position: absolute;
+    left: 146px;
+    margin-top: 20px;
+  }
+
+  .grid-item-5{
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: #ffffff;
+  }
+
+  .deli-title{
+    font-size: 70px;
+    color: #7287ae;
+    font-weight: 700;
+    font-family: "Ubuntu";
+    text-align: center;
+    margin-top: 102px;
+  }
+
+  .deli-desc{
+    width: 100%;
+    height: 175px;
+    font-size: 29px;
+    margin-right: 0px;
+    color: #7287ae;
+    font-weight: 400;
+    font-family: "Lato";
+    text-align: center;
+    margin-top: 48px;
+  }
+
+  .btn-deli-design{
+    width: 442px;
+    height: 75px;
+    border-radius: 38px;
+    background-color: #7287ae;
+    border: 1px solid #7287ae;
+    margin-top: 16px;
+  } 
+  
+  .deli-nood-btn{
+    font-size: 23px;
+    letter-spacing: 5px;
+    line-height: 21px;
+    color: #ffffff;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: "Ubuntu";
+  }
+
+  .grid-container-6{
+    display: inline-grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 10px;
+    row-gap: 26px;
+    column-gap: 34px;
+    position: absolute;
+    right: 120px;
+    margin-top: 74px;
+  }
+
+  .grid-item-6{
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: #7287ae;
+  }
+
+
+  /********************************************/
+/* ************ AGUS-SECTION ************** */
+/********************************************/
+
+
+  .agus-section{
+    width: 100%;
+    height: auto;
+  }
+
+  .agus-section blockquote{
+    text-align: center;
+    color: #7287ae;
+    margin-top: 100px;
+  }
+
+  .agus-desc{
+    width: 100%;
+    height: 109px;
+    font-size: 37px;
+    line-height: 42px;
+    color: #7287ae;
+    font-weight: 400;
+    font-family: "Lato";
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .agus-waiters{
+    font-size: 42px;
+    line-height: 42px;
+    color: #7287ae;
+    font-weight: 700;
+    font-family: "Ubuntu";
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .social-icons{
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+  }
+
+  .btn.btn-social-icon {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+  }
+
+  .btn.btn-rounded {
+    border-radius: 50px;
+  }
+
+  .btn-facebook {
+    background: #7287ae;
+    color: #dfe9c1;
+    font-size: 30px;
+  }
+
+  .btn-facebook:hover,
+  .btn-facebook:focus {
+     background: #2d4278;
+     color: #dfe9c1;;
+  }
+
+  .btn-twitter {
+    background: #7287ae;
+    color: #dfe9c1;
+    font-size: 30px;
+  }
+
+  .btn-twitter:hover,
+  .btn-twitter:focus {
+     background: #2d4278;
+     color: #dfe9c1;
+  }
+
+  .btn-instagram {
+    background: #7287ae;
+    color: #dfe9c1;
+    font-size: 30px;
+  }
+
+  .btn-instagram:hover,
+  .btn-instagram:focus {
+     background: #2d4278;
+     color: #dfe9c1;;
+  }
+
+  .grid-container-7{
+    display: inline-grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 10px;
+    row-gap: 26px;
+    column-gap: 34px;
+    position: relative;
+    left: 180px;
+    margin-top: 0px;
+    margin-bottom: 70px;
+  }
+
+  .grid-item-7{
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: #7287ae;
+  }
+
+
+
+  /********************************************/
+/* ************ AGUS-SECTION ************** */
+/********************************************/
+
+  .footer-section {
+    width: 100%;
+    background: url("../img/foot-bg.png") no-repeat;
+    /* background-color: #7287ae; */
+    /* height: 50vw; */
+    background-size: cover;
+  }
+
+  .about-title{
+    width: 100%;
+    height: 32px;
+    font-size: 25px;
+    line-height: 33px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Ubuntu";
+    margin-top: 66px;
+    /* margin-left: 30px; */
+    text-transform: uppercase;
+  }
+  
+  .about-desc{
+    width: 100%;
+    /* height: 140px; */
+    font-size: 11px;
+    line-height: 29px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Lato";
+    /* margin-left: 30px; */
+  }
+
+
+  .footer-section .footer-m-title{
+    width: 100%;
+    height: 32px;
+    font-size: 25px;
+    line-height: 33px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Ubuntu";
+    margin-top: 66px;
+    text-transform: uppercase;
+}
+
+
+.footer-section ul li a{
+  width: 100%;
+  height: 17px;
+  font-size: 21px;
+  line-height: 33px;
+  color: #ffffff;
+  font-weight: bold;
+  font-family: "Lato";
+  text-decoration: none;
+}

@@ -1,0 +1,579 @@
+
+@media (max-width: 1368px){
+    .card-section img{
+        height: 24vw;
+    }
+
+    /* .cup-discount {
+        margin-top: 175px;
+    } */
+
+    .header-section {
+        width: 100%;
+        height: 73vw;
+        background: url(../img/bg-1.png) no-repeat;
+        background-size: contain;
+    }
+
+}
+
+
+@media (max-width: 1300px){
+    .deli-title {
+        font-size: 50px;
+    }
+
+    .deli-desc {
+        font-size: 22px;
+    }
+
+    .btn-deli-design {
+        width: 400px;
+        margin-top: 22px;
+    }
+
+}
+
+
+
+@media (max-width: 1200px){
+
+    .card-section img{
+        height: 24vw;
+    }
+
+    .agus-desc {
+        font-size: 36px;
+    }
+
+    .about-desc {
+        font-size: 11px;
+    }
+
+    .deli-desc {
+        margin-top: 26px;
+    }
+
+    .btn-deli-design {
+        width: 378px;
+        margin-top: 10px;
+    }
+
+    .rest-heading {
+        font-size: 80px;
+        line-height: 80px;
+    }
+
+    .rest-desc {
+        width: 100%;
+        /* height: 74px; */
+        font-size: 26px;
+    }
+
+}
+
+@media (max-width: 1100px){
+
+    .deli-title {
+        font-size: 40px;
+    }
+
+    .deli-desc {
+        font-size: 16px;
+    }
+
+    .btn-deli-design {
+        width: 344px;
+        margin-top: -16px;
+    }
+
+    .deli-nood-btn {
+        font-size: 16px;
+    }
+
+    .card-section img{
+        height: 24vw;
+    }
+
+    .cup-discount h1 {
+        font-size: 50px;
+    }
+
+    .cup-discount p {
+        font-size: 24px;
+    }
+
+    .cup-discount-2 h1 {
+        font-size: 50px;
+    }
+
+    .cup-discount-2 p {
+        font-size: 24px;
+    }
+
+    
+
+}
+
+@media (max-width: 992px){
+    .grid-container,
+    .grid-container-1, .grid-container-2,
+    .grid-container-3, .grid-container-4,
+    .grid-container-5, .grid-container-6,
+    .grid-container-7{
+        display: none;
+    }
+
+    .card-section img{
+        height: 20vw;
+    }
+
+    .card-title {
+        font-size: 26px;
+    }
+
+    .card-text {
+        font-size: 18px;
+    }
+
+    .card-price {
+        font-size: 26px;
+    }
+
+    .logo-brand{
+        display: none;
+    }
+
+    .rest-heading {
+        font-size: 45px;
+        line-height: 45px;
+    }
+   
+    .rest-desc {
+        font-size: 15px;
+    }
+
+    
+    .cup-discount h1 {
+        font-size: 44px;
+    }
+
+    .cup-discount p {
+        font-size: 22px;
+    }
+
+    .btn-read-design {
+        margin-top: 20px;
+    }
+
+    
+
+    .cup-discount-2 h1 {
+        font-size: 44px;
+    }
+
+    .cup-discount-2 p {
+        font-size: 22px;
+    }
+
+    .deli-title {
+        font-size: 40px;
+    }
+
+    .deli-desc {
+        margin-top: 0px;
+    }
+
+    .btn-deli-design {
+        width: 316px;
+        margin-top: -24px;
+    }
+
+    .deli-nood-btn {
+        font-size: 16px;
+    }
+
+    .agus-desc {
+        font-size: 26px;
+    }
+
+   
+
+    .about-desc {
+        width: 100%;
+        font-size: 8px;
+    }
+
+    .footer-section ul li a {
+        font-size: 16px;
+    }
+
+    .order-title {
+        font-size: 33px;
+    }
+
+    .popu-menu {
+        font-size: 29px;
+        margin-top: -70px;
+        margin-bottom: 0px;
+    }
+
+}
+
+@media (max-width: 916px){
+
+    .card-section img{
+        height: 24vw;
+    } 
+
+    .grid-container-3 {
+        left: 162px;
+    }
+    
+    .cup-discount p {
+        font-size: 20px;
+    }
+
+    .cup-discount-2 p {
+        font-size: 20px;
+    }
+
+    .deli-title {
+        font-size: 34px;
+    }
+
+    .deli-desc {
+        font-size: 16px;
+        height: 154px;
+    }
+
+    .deli-nood-btn {
+        font-size: 16px;
+    }
+
+    .btn-deli-design {
+        width: 288px;
+        margin-top: -48px;
+        height: 66px;
+    }
+
+}
+
+@media (max-width: 816px){
+    .card-section img{
+        height: 24vw;
+    }
+
+    .grid-container-3 {
+        left: 162px;
+    }
+
+    .cup-discount p {
+        font-size: 18px;
+    }
+
+    .cup-discount-2 h1 {
+        font-size: 40px;
+    }
+
+    .cup-discount-2 p {
+        font-size: 18px;
+    }
+
+    .btn-read-design {
+        margin-top: 0px;
+    }
+
+    .deli-desc {
+        font-size: 16px;
+        height: 120px;
+    }
+
+    .btn-deli-design {
+        width: 258px;
+        margin-top: -45px;
+        height: 52px;
+    }
+
+}
+
+@media (max-width: 768px){
+    
+    .promo-df{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .btn-read-design {
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+
+    .card-section img {
+        height: 50vw;
+    }
+
+
+    .grid-container-1 {
+        left: 45px;
+        margin-top: -106px;
+        row-gap: 22px;
+        column-gap: 22px;
+    }
+
+    .cup-discount {
+        text-align: center;
+        margin-top: 50px
+    }
+
+    .cup-discount p {
+        font-size: 18px;
+        height: 122px;
+    }
+
+    .cup-discount-2 p {
+        height: 122px;
+        font-size: 18px;
+    }
+
+
+
+    .cup-discount-2 {
+        text-align: center;
+        margin-top: 50px
+    }
+
+    .grid-container-3 {
+        left: 50px;
+        margin-top: -442px;
+        /* position: absolute; */
+    }
+
+    .nood-cup-2 {
+        width: 100%;
+        /* margin-top: 16px; */
+    }
+
+    .numbers{
+        margin-top: 0px;
+      }
+
+    .num-1{
+        margin-top: 20px;
+    }
+    
+    .grid-container-6 {
+        right: 10px;
+        margin-top: -22px;
+    }
+
+    .deli-title {
+        font-size: 33px;
+        margin-top: 76px;
+    }
+
+    .deli-desc {
+        font-size: 12px;
+    }
+
+    .btn-deli-design {
+        width: 243px;
+        margin-top: -6px;
+        height: 52px;
+    }
+
+    .grid-container-6 {
+        right: 10px;
+        margin-top: 76px;
+    }
+
+    .agus-desc {
+        font-size: 18px;
+    }
+
+    .about-title {
+        text-align: center;
+    }
+
+    .about-desc {
+        text-align: center;
+        width: 100%;
+    }
+
+    .footer-section .footer-m-title {
+        text-align: center;
+    }
+
+    .footer-section ul{
+        text-align: center;
+    }
+    .mt-5{
+        margin-top: 0px!important;
+    }
+    
+    .rest-heading {
+        font-size: 45px;
+        line-height: 45px;
+        margin-top: 56px;
+    }
+
+    .rest-desc {
+        font-size: 15px;
+        margin-top: 15px;
+    }
+
+    .popu-menu {
+        font-size: 36px;
+        margin-top: -44px;
+        margin-bottom: 80px;
+    }
+
+    
+}
+
+
+@media (max-width: 676px){
+    
+    .card-section img {
+        height: 50vw;
+    }
+
+    .grid-container-2 {
+        row-gap: 22px;
+        column-gap: 22px;
+        right: 10px;
+        margin-top: -245px;
+    }
+
+    .btn-design {
+        width: 296px;
+    }
+
+    .btn-deli-design {
+        width: 212px;
+        margin-top: -27px;
+    }
+
+    .deli-desc {
+        height: 100px;
+    }
+
+}
+
+
+@media (max-width: 576px){
+
+    .rest-heading {
+        font-size: 45px;
+        line-height: 45px;
+        margin-top: 0px;
+    }
+
+    .card-section img {
+        height: 60vw;
+    }
+    
+    .grid-container {
+        top: 364px;
+    }
+    
+    .grid-container-1 {
+        left: 22px;
+        margin-top: -96px;
+        row-gap: 22px;
+        column-gap: 22px;
+    }
+
+    .move-down {
+        order: 2;
+    }
+    .move-up {
+        order: 1;
+    }
+
+    .deli-title {
+        font-size: 33px;
+        margin-top: 38px;
+    }
+
+    .btn-deli-design {
+        width: 184px;
+        margin-top: -34px;
+        height: 40px;
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 520px){
+    .deli-desc {
+        height: 80px;
+    }
+    .btn-deli-design {
+        width: 172px;
+    }
+
+    .agus-desc {
+        font-size: 16px;
+        margin-top: 0px;
+    }
+    .agus-waiters {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 450px){
+
+    .rest-heading {
+        font-size: 36px;
+        line-height: 36px;
+    }
+
+    .rest-desc {
+        font-size: 12px;
+        margin-top: 6px;
+    }
+
+    .popu-menu {
+        font-size: 30px;
+        margin-top: -10px;
+        margin-bottom: 58px;
+    }
+
+    .deli-title {
+        font-size: 28px;
+    }
+    .deli-desc {
+        height: 58px;
+    }
+
+    .deli-desc {
+        font-size: 8px;
+    }
+
+    .btn-deli-design {
+        width: 153px;
+        margin-top: -34px;
+        height: 34px;
+        font-size: 8px;
+    }
+    .agus-desc {
+        width: 100%;
+        height: 30px;
+        font-size: 12px;
+        line-height: 26px;
+    }
+}
+
+@media (max-width: 393px){
+    .deli-title {
+        margin-top: 34px;
+    }
+    .btn-deli-design {
+        width: 128px;
+        margin-top: -34px;
+        height: 34px;
+        font-size: 6px;
+    }
+}
